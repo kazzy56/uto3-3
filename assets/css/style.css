@@ -514,6 +514,9 @@ a:hover {
 .c-media {
   display: flex;
 }
+.c-media--reverse {
+  flex-direction: row-reverse;
+}
 @media (width <= 767px) {
   .c-media {
     flex-direction: column;
@@ -649,6 +652,22 @@ a:hover {
 @media (width <= 767px) {
   .p-nav__item {
     padding: 10px 0;
+  }
+}
+
+.p-price {
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+  margin: -80px 0 80px;
+  padding: 120px 0;
+  background-color: #ffed58;
+}
+@media (width <= 767px) {
+  .p-price {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    margin: -45px 0 40px;
+    padding: 80px 0;
   }
 }
 

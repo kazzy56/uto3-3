@@ -3,6 +3,11 @@
 .c-media {
   display: flex;
 
+  // 詳細度の関係でこの順番
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
   @include mq(md) {
     flex-direction: column;
   }
