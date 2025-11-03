@@ -27,3 +27,10 @@
   background-color: $color-white;
   @include fz(14);
 }
+
+.c-button-form {
+  padding: 15px 50px;
+  background-color: #000;
+  color: $color-white;
+  @include fz(14);
+}
